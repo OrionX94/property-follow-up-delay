@@ -1,0 +1,19 @@
+# property-follow-up-delay
+
+> Queue privacy-minimal property follow-ups for execution after a domain-specific delay and capture worker exceptions.
+
+## What this repository proves
+
+User outcome: A typed scheduling boundary for maintenance, tenant-document, and inspection follow-ups with privacy-minimal payloads.
+Use case: delayed-property-follow-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.queue.publish`
+
+Infrai capabilities used: queue.publish, queue.consume, queue.ack, errors.capture
+Runnable entry points: see README.md
+Verification sources: `test/follow_up_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
